@@ -80,7 +80,6 @@ def decode_char(char)
   morse_code[char]
 end
 
-
 puts decode_char('-...')
 
 def decode_word(word)
