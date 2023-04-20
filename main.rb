@@ -81,10 +81,7 @@ def decode_char(char)
 end
 
 
-
 puts decode_char('-...')
-
-
 
 def decode_word(word)
   decoded_word = ''
@@ -95,8 +92,6 @@ def decode_word(word)
 end
 
 decode_word('-- -.--')
-
-
 
 def decode(sentence)
   sentence.split('  ').each { |word| decode_word(word) }
