@@ -83,3 +83,19 @@ end
 
 
 puts decode_char('-...')
+
+
+def decode_word (word) 
+ decoded_word = ""
+ word.split(" ").each{|item|decoded_word.concat decode_char(item)}
+ puts decoded_word
+end
+decode_word ("-- -.--")
+
+
+def decode(sentence)
+  sentence.split('  ').each { |word| decode_word(word) }
+end
+decode_char('.-')
+decode_word('-- -.--')
+decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
