@@ -96,6 +96,6 @@ decode_word ("-- -.--")
 def decode(sentence)
   sentence.split('  ').each { |word| decode_word(word) }
 end
-decode_char('.-')
-decode_word('-- -.--')
-decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
+puts decode_char('.-')
+puts decode_word('-- -.--')
+puts decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
